@@ -11,7 +11,9 @@ export class WebtrainingPersonalCard {
     @Prop () firstName : string = "";
     @Prop () lastName: string = "";
     @Prop () photo: string = "";
+    @Prop () role: string = "";
     @Prop () resume: string = "";
+   
 
     render(){
         return(
@@ -24,9 +26,14 @@ export class WebtrainingPersonalCard {
                 <h2 class="b-personal-card__full-name"> 
                 {this.firstName} {this.lastName}
                 </h2>
+                <div class="b-personal-card__role">
+                    {this.role}
+
+                </div>
                 <div class="b-personal-card__resume">
                     {this.resume}
                 </div> 
+               
             </div>
                 </div>
            
